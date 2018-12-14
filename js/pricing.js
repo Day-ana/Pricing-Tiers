@@ -45,7 +45,7 @@ function getPrices(value){
     //turn on Available in the case that price is available
     notAvailable.style.display = "none";
 
-    //interate through the nodes with a data set
+    //iterate through the nodes with a data set
     priceElements.forEach((item, index) =>{
       //grab the price value in the price array
       let monthPrice = prices[value][month][item.dataset.price -1],
@@ -99,8 +99,3 @@ function togglePriceAnimations(){
 
 //init toggle function
 togglePriceAnimations();
-
-//used on v4 page variant
-var newURL = function(url){
-  window.location = url;
-}
